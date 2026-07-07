@@ -21,7 +21,7 @@ define left_2B = Position(xalign = 0.2, yalign = 1.0)
 define left_3 = Position(xalign = 0.3, yalign = 1.0)
 define right_1 = Position(xalign = 1.0, yalign = 1.0)
 define right_2 = Position(xalign = 0.85, yalign = 1.0)
-define right_2B = Position(xalign = 0.85, yalign = 1.0)
+define right_2B = Position(xalign = 0.8, yalign = 1.0)
 define right_3 = Position(xalign = 0.6, yalign = 1.0)
 
 default confio_doctora = False
