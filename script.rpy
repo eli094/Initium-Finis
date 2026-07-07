@@ -17,7 +17,7 @@ define doc = Character(_("Psiquiatra"), color="#d7ec82ff", image = "psicologa")
 
 define left_1 = Position(xalign = 0, yalign = 1.0)
 define left_2 = Position(xalign = 0.15, yalign = 1.0)
-define left_2B = Position(xalign = 0.2, yalign = 1.0)
+define left_2B = Position(xalign = 0.22, yalign = 1.0)
 define left_3 = Position(xalign = 0.3, yalign = 1.0)
 define right_1 = Position(xalign = 1.0, yalign = 1.0)
 define right_2 = Position(xalign = 0.85, yalign = 1.0)
