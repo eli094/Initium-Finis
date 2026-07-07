@@ -19,18 +19,28 @@ define config.name = _("Initium Finis")
 ## Determina si el título dado más arriba se muestra en el menú principal.
 ## Ajústalo a 'False' para ocultar el título.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Versión del juego.
 
-define config.version = "1.0"
+define config.version = ""
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
 
-define gui.about = _p("""
+define gui.about = _p("""Arte de Personajes: Elian Escalante y Belén Santana.
+
+Arte del Fondo: Elian Escalante.
+
+Música: Belén Santana.
+
+Historia: Sergio De Santi, Sabrina Hennse, Luciano Picholis, Mauricio Pucciariello y Sofía Vardé Tusé.
+
+Programación: Sofía Vardé Tusé y Franco Chialvo.
+
+Documentación: Franco Chialvo, Elian Escalante, Luciano Picholis, Mauricio Pucciariello, Belén Santana y Sofía Vardé Tusé.
 """)
 
 
@@ -48,7 +58,7 @@ define build.name = "InitiumFinis"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,

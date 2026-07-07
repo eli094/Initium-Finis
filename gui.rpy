@@ -65,11 +65,14 @@ define gui.name_text_font = "DejaVuSans.ttf"
 ## El tipo de letra del texto externo al juego.
 define gui.interface_text_font = "DejaVuSans.ttf"
 
+#Para ponerle sombra a los nombres de los personajes.
+define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
+
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 45
+define gui.text_size = 22
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 55
+define gui.name_text_size = 35
 
 ## El tamaño del texto en la interfaz.
 define gui.interface_text_size = 33
@@ -97,7 +100,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## línea cada vez.
 
 ## Altura de la caja de texto que contiene el diálogo.
-define gui.textbox_height = 350
+define gui.textbox_height = 230
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
@@ -106,8 +109,8 @@ define gui.textbox_yalign = 1.0
 ## Colocación del nombre del personaje hablante, relativa a la caja de texto.
 ## Puede ser el númerode píxels desde la esquina superior izquierda, o 0.5 para
 ## centrar.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 520
+define gui.name_ypos = -30
 
 ## La alineación horizontal del nombre del personaje. (0.0 es izquierda, 0.5 es
 ## centro, 1.0 es derecha).
@@ -129,8 +132,8 @@ define gui.namebox_tile = False
 
 ## Colocación del diálogo relativa a la caja de texto. Puede ser el número de
 ## píxels relativos a la esquina superor izquierda o 0.5 para centrar.
-define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_xpos = 530
+define gui.dialogue_ypos = 50
 
 ## La anchura máxima del texto del diálogo, en píxels.
 define gui.dialogue_width = 1116
