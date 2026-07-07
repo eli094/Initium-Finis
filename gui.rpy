@@ -57,22 +57,23 @@ define gui.interface_text_color = '#404040'
 ## Tipos y tamaños de letra ####################################################
 
 ## El tipo de letra del texto del juego
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "SmallMemory.ttf"
 
 ## El tipo de letra de los nombres de personajes
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "SmallMemory.ttf"
 
 ## El tipo de letra del texto externo al juego.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "SmallMemory.ttf"
 
 #Para ponerle sombra a los nombres de los personajes.
 define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 22
+define gui.text_size = 32
+define gui.dialogue_text_outlines = [ (0, "#00000080", 2, 2) ]
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 35
+define gui.name_text_size = 37
 
 ## El tamaño del texto en la interfaz.
 define gui.interface_text_size = 33
@@ -136,7 +137,7 @@ define gui.dialogue_xpos = 530
 define gui.dialogue_ypos = 50
 
 ## La anchura máxima del texto del diálogo, en píxels.
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1016 #1116
 
 ## La alineación horizontal del texto del diálogo. (0.0 es izquierda, 0.5 es
 ## centro, 1.0 es derecha).

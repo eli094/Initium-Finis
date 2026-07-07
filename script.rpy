@@ -1,5 +1,5 @@
-﻿define abuela = Character(_("Ester"), color="#7c039a")
-define pensamientoabuela = Character(_("Pensamientos de Ester"), color="#7c039a")
+﻿define abuela = Character(_("Ester"), color="#a105c8")
+define pensamientoabuela = Character(_("Pensamientos de Ester"), color="#a105c8")
 
 define hijo = Character(_("Lucas"), color="#2b00ff")
 define hija = Character(_("Luciana"), color="#fbfbfbc6")
