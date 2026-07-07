@@ -171,7 +171,7 @@ label Trust:
 
     pensamientoabuela normal "Escucho las llaves sonar, seguro que es ella."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -300,7 +300,7 @@ label Lie:
     pensamientoabuela "Donde la vida y la muerte conviven constantemente."
     pensamientoabuela "Espero que esté bien."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -667,7 +667,7 @@ label Story12:
 
     hijo "No sé Santi. Es mejor que se quede en casa."
 
-    show hija at left_3
+    show hija normal at left_3
     with dissolve
 
     hija "Lucas, no les dejás hacer nada."
@@ -778,7 +778,7 @@ label Story21:
 
     hijo "No sé Santi. Es mejor que se quede en casa."
 
-    show hija at left_3
+    show hija normal at left_3
     with dissolve
 
     hija "Lucas, no les dejás hacer nada."
@@ -973,7 +973,7 @@ label Yes:
     hide facundo
     with dissolve
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1010,7 +1010,7 @@ label Yes:
     show ester normal at left_1
     with dissolve
     
-    show hija at right_1
+    show hija normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1036,7 +1036,7 @@ label Yes:
     show ester normal at left_1
     with dissolve
 
-    show hija at center
+    show hija normal at center
     with dissolve
     
     show facundo normal at right_1
@@ -1325,7 +1325,7 @@ label CachitoYes:
 
     hijo "¡Ahí está mamá!"
 
-    show hija at right_2
+    show hija normal at right_2
     with dissolve
 
     hija "Por fin apareció."
@@ -1357,7 +1357,7 @@ label CachitoYes:
 
     pensamientoabuela "Todos parecen más tranquilos."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1423,7 +1423,7 @@ label CachitoNo:
         xzoom -1.0
     with dissolve
 
-    show hija at right_2
+    show hija normal at right_2
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1449,7 +1449,7 @@ label CachitoNo:
     show ester normal at left_1
     with dissolve
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1493,7 +1493,7 @@ label Capitulo3_Casa:
     abuela "Un poco."
     abuela "Pero el aire de la plaza me hizo bien."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     hija "Te dije que salir un rato le iba a hacer bien."
@@ -1539,7 +1539,7 @@ label Capitulo3_Perdida:
     show ester normal at left_1
     with dissolve
     
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1652,7 +1652,7 @@ label EntradaAmbar:
 
     esposa "¿Llegué en mal momento?"
 
-    show hija at right_2
+    show hija normal at right_2
     with dissolve
 
     hija "No."
@@ -1907,7 +1907,7 @@ label CenaFamiliar:
     hijo "Mamá..."
     hijo "Queríamos hablar con vos de algo importante."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     hija "Lucas."
@@ -2112,7 +2112,7 @@ label Cap3Negar:
     hijo "No vamos a seguir discutiendo ahora."
     hijo "Pero tenemos que buscar ayuda profesional."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2171,7 +2171,7 @@ label Capitulo4:
     hijo "Viste mamá, está lindo el lugar."
     abuela "No me gustan los hospitales así."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     hija "No es un hospital, es un centro de ayuda."
@@ -2479,7 +2479,7 @@ label Cap4Conexion:
     show ester normal at left_1
     with dissolve
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2517,7 +2517,7 @@ label Cap4Conexion:
     show ester normal at left_1
     with dissolve
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2590,7 +2590,7 @@ label Cap4Conexion:
     pensamientoabuela "Hoy no tuve que preguntar dónde sentarme."
     pensamientoabuela "Y vine acompañada, también."
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     show lucas normal at left_2B:
@@ -2835,7 +2835,7 @@ label EpilogoBueno:
 
     abuela "¡Buenas!"
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     hija "Mamá, ¿cómo te sentís?"
@@ -2890,7 +2890,7 @@ label EpilogoBueno:
     hide santino
     with dissolve
 
-    show hija at center
+    show hija normal at center
     with dissolve
 
     hija "Vamos a la mesa."
@@ -2930,7 +2930,7 @@ label EpilogoMalo:
     hijo "Mamá."
     hijo "Somos nosotros."
     
-    show hija at right_2
+    show hija normal at right_2
     with dissolve
 
     hija "Quizás ya no nos reconoce."
@@ -2958,7 +2958,7 @@ label EpilogoMalo:
     show lucas normal at right_2
     with dissolve
 
-    show hija at right_1
+    show hija normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
