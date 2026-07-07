@@ -858,7 +858,9 @@ label Yes:
     scene plaza
     with fade
 
-    show ester normal at left_1
+    show ester normal:
+        xalign 0.0
+        yalign 1.0
     with dissolve
 
     show facundo normal at right_1
