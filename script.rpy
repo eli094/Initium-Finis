@@ -2909,7 +2909,7 @@ label EpilogoMalo:
     scene hospital
     with fade
     
-    show psicologa at left_1
+    show psicologa at left_1:
         xzoom -1.0
     with dissolve
 
