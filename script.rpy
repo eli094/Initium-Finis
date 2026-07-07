@@ -17,9 +17,11 @@ define doc = Character(_("Psiquiatra"), color="#d7ec82ff", image = "psicologa")
 
 define left_1 = Position(xalign = 0, yalign = 1.0)
 define left_2 = Position(xalign = 0.15, yalign = 1.0)
+define left_2B = Position(xalign = 0.2, yalign = 1.0)
 define left_3 = Position(xalign = 0.3, yalign = 1.0)
 define right_1 = Position(xalign = 1.0, yalign = 1.0)
 define right_2 = Position(xalign = 0.85, yalign = 1.0)
+define right_2B = Position(xalign = 0.85, yalign = 1.0)
 define right_3 = Position(xalign = 0.6, yalign = 1.0)
 
 default confio_doctora = False
@@ -2591,7 +2593,7 @@ label Cap4Conexion:
     show hija at center
     with dissolve
 
-    show lucas normal at left_2:
+    show lucas normal at left_2B:
         xzoom -1.0
     with dissolve
 
@@ -2858,7 +2860,7 @@ label EpilogoBueno:
     hide hija
     with dissolve
 
-    show ambar at right_2
+    show ambar normal at right_2
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2884,6 +2886,9 @@ label EpilogoBueno:
     abuela "Y con hambre."
     esposa @ happy "Perfecto."
     esposa "Porque justo trajimos algo para merendar."
+
+    hide santino
+    with dissolve
 
     show hija at center
     with dissolve
@@ -2962,7 +2967,7 @@ label EpilogoMalo:
     hija "No sé para qué seguimos viniendo."
     hijo "Porque sigue siendo nuestra mamá."
     
-    show ambar at right_3
+    show ambar normal at right_3
     with dissolve
 
     #0 es caja de diálogo normal.
