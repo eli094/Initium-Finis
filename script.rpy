@@ -1944,7 +1944,7 @@ label CenaFamiliar:
     hijo "Se trata de que no estés sola."
     hija "Y de no esperar a que pase algo peor."
 
-    show ambar normal at right_2
+    show ambar normal at right_2B
     with dissolve
 
     #0 es caja de diálogo normal.
