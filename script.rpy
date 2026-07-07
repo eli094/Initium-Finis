@@ -2916,7 +2916,9 @@ label EpilogoMalo:
     scene hospital
     with fade
     
-    show psicologa normal at left_1:
+    show psicologa normal:
+        xalign 0.0
+        yalign 1.0
         xzoom -1.0
     with dissolve
 
