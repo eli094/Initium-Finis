@@ -1552,7 +1552,7 @@ label Capitulo3_Perdida:
 
     hijo "Mamá."
     hijo "Te perdimos por dos horas."
-    hija @ angry "¡Dos horas!"
+    hija "¡Dos horas!"
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -1747,16 +1747,14 @@ label CocinaAmbar:
     scene cocina
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
     pensamientoabuela "Esta cocina sí la conozco."
 
-    show ambar at right
+    show ambar normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1764,7 +1762,7 @@ label CocinaAmbar:
 
     esposa "Ester."
     esposa "¿Los cubiertos dónde están?"
-    abuela "En ese cajón."
+    abuela "En este cajón."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -1782,7 +1780,7 @@ label CocinaAmbar:
     esposa "Ya sé."
     esposa "A todos nos pasa."
     abuela "Sos buena para mentir sin que se note."
-    esposa "Y vos siempre fuiste buena para darte cuenta."
+    esposa @ happy "Y vos siempre fuiste buena para darte cuenta."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -1801,7 +1799,7 @@ label CocinaAmbar:
     esposa "¿Y Luciana se enojaba porque tocaba sus cosas?"
     abuela "Sí."
     abuela "Tiene carácter fuerte."
-    esposa "Pero te quiere mucho."
+    esposa @ happy "Pero te quiere mucho."
     abuela "Ya lo sé."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
@@ -1844,18 +1842,18 @@ label CocinaAmbar:
     $ text_box = 0
 
     abuela "Ahí está."
-    esposa "¡Qué perfección, Ester!"
+    esposa happy "¡Qué perfección, Ester!"
     esposa "Estás para abrir una panadería."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
-    pensamientoabuela "Me hace reír."
+    pensamientoabuela @ happy "Me hace reír."
 
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    esposa "Bueno."
+    esposa normal "Bueno."
     esposa "Vamos a llevar la comida."
     abuela "Dale."
 
@@ -1866,16 +1864,15 @@ label CenaFamiliar:
     scene realliving
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
     pensamientoabuela "Todos vuelven a sentarse juntos."
 
-    show hermano_menor at right
+    show santino normal at right_3
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1883,14 +1880,7 @@ label CenaFamiliar:
 
     nietomenordelhijo "¿Puedo servirle agua a la abuela?"
 
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show personaje_placeholder_blury at right
+    show lucas normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1898,16 +1888,19 @@ label CenaFamiliar:
     
     hijo "Sí."
     hijo "Despacio."
-    abuela "Gracias, querido."
+    abuela happy "Gracias, querido."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
     pensamientoabuela "Qué amable es este chico."
-    pensamientoabuela "Hay un silencio extraño."
+    pensamientoabuela normal "Hay un silencio extraño."
 
     #0 es caja de diálogo normal.
     $ text_box = 0
+
+    hide santino
+    with dissolve
 
     hijo "Mamá..."
     hijo "Queríamos hablar con vos de algo importante."
@@ -1949,14 +1942,7 @@ label CenaFamiliar:
     hijo "Se trata de que no estés sola."
     hija "Y de no esperar a que pase algo peor."
 
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show ambar at right
+    show ambar normal at right_2
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -1987,13 +1973,6 @@ label Cap3Aceptar:
 
     play music "initium finis (3rd chapter).mp3"
 
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
     #0 es caja de diálogo normal.
     $ text_box = 0
 
@@ -2011,49 +1990,26 @@ label Cap3Aceptar:
     abuela "Si de verdad creen que me va a hacer bien..."
     abuela "Voy a ir."
 
-    show hija at center
-    with dissolve
-
     hija "¿En serio?"
     abuela "Sí."
-    abuela "Pero no me hablen como si ya no entendiera nada."
-
-    show personaje_placeholder_blury at right
-    with dissolve
+    abuela @ angry "Pero no me hablen como si ya no entendiera nada."
 
     hijo "Nunca haríamos eso."
     hija "Gracias, mamá."
-
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show ambar at center
-    with dissolve
 
     #0 es caja de diálogo normal.
     $ text_box = 0
 
     esposa "Entonces mañana vemos cómo organizarlo."
 
-    show personaje_placeholder_blury at right
-    with dissolve
-
     hijo "Vamos a ir con vos."
     abuela "Bueno."
     abuela "Pero ahora quiero dormir."
 
-    scene realliving
-    with fade
+    hide lucas
+    with dissolve
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-    
-    show hija at center
+    hide ambar
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2071,28 +2027,15 @@ label Cap3Negar:
 
     play music "initium finis (3rd chapter).mp3"
     
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-    
     #0 es caja de diálogo normal.
     $ text_box = 0
 
     abuela "No."
     abuela "No voy a ir a ningún lado."
 
-    show personaje_placeholder_blury at right
-    with dissolve
-
     hijo "Mamá..."
-    abuela "¡No!"
+    abuela angry "¡No!"
     abuela "Ya escuché demasiado por hoy."
-
-    show hija at center
-    with dissolve
 
     hija "No es un ataque."
     abuela "Entonces dejá de mirarme como si estuviera mal."
@@ -2118,23 +2061,16 @@ label Cap3Negar:
     $ text_box = 1
 
     pensamientoabuela "El pecho me aprieta."
-    pensamientoabuela "Las voces se mezclan."
+    pensamientoabuela confused "Las voces se mezclan."
     pensamientoabuela "Ya no entiendo quién está hablando."
 
     #0 es caja de diálogo normal.
     $ text_box = 0
 
     hija "Mamá, sentate."
-    abuela "¡No me toques!"
+    abuela angry "¡No me toques!"
 
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show ambar at center
+    hide hija
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2143,19 +2079,9 @@ label Cap3Negar:
     esposa "Lucas."
     esposa "Traé agua."
 
-    show personaje_placeholder_blury at right
-    with dissolve
-
     hijo "Ya voy."
 
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-    
-    show ambar at center
+    hide lucas
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2171,11 +2097,11 @@ label Cap3Negar:
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
-    pensamientoabuela "Intento hacerlo."
+    pensamientoabuela normal "Intento hacerlo."
 
     play sound "audio/grandma breathing sfx.mp3"
 
-    show personaje_placeholder_blury at right
+    show lucas normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2184,14 +2110,7 @@ label Cap3Negar:
     hijo "No vamos a seguir discutiendo ahora."
     hijo "Pero tenemos que buscar ayuda profesional."
 
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show hija at right
+    show hija at center
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2205,9 +2124,6 @@ label Cap3Negar:
     pensamientoabuela "Su voz se quiebra."
     pensamientoabuela "Quisiera consolarla."
 
-    show ambar at center
-    with dissolve
-
     #0 es caja de diálogo normal.
     $ text_box = 0
 
@@ -2216,6 +2132,12 @@ label Cap3Negar:
     abuela "Quiero irme a dormir."
     abuela "Sola."
     esposa "Te acompaño hasta la puerta."
+
+    hide lucas
+    with dissolve
+
+    hide hija
+    with dissolve
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2229,9 +2151,7 @@ label Capitulo4:
     scene sala_de_espera
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2240,7 +2160,7 @@ label Capitulo4:
     pensamientoabuela "¿Por qué me trajeron acá?"
     pensamientoabuela "Todos me miran como si fuera a romperme."
 
-    show personaje_placeholder_blury at right
+    show lucas normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2255,14 +2175,12 @@ label Capitulo4:
     hija "No es un hospital, es un centro de ayuda."
     abuela "Es lo mismo."
 
-    scene sala_de_espera
-    with fade
+    hide lucas
+    with dissolve
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    hide hija with dissolve
     
-    show ambar at center
+    show ambar normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2273,9 +2191,8 @@ label Capitulo4:
     scene sala_de_espera
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2286,16 +2203,15 @@ label Capitulo4:
     scene psicologo
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
     
     pensamientoabuela "Entramos a una oficina tranquila."
 
-    show psicologa at right
+    show psicologa normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2303,19 +2219,16 @@ label Capitulo4:
 
     doc "¿Son ustedes los familiares de Ester?"
 
-    show personaje_placeholder_bluryl at center
+    show lucas normal at left_3:
+        xzoom -1.0
     with dissolve
 
     hijo "Así es."
     doc "Muy bien, entonces, les pido amablemente que se retiren."
     doc "Me gustaría hablar a solas con Ester."
 
-    scene psicologo
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    hide lucas
+    with dissolve
     
     play sound "audio/closed door sfx.mp3"
 
@@ -2324,21 +2237,13 @@ label Capitulo4:
 
     pensamientoabuela "Observo el modo en el que se van de la sala."
 
-    scene psicologo
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show psicologa at right
-    with dissolve
-
     #0 es caja de diálogo normal.
     $ text_box = 0
 
     doc "Hola Ester, ¿cómo llegó hasta acá?"
     abuela "Me trajeron."
+
+    show psicologa happy
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2348,7 +2253,7 @@ label Capitulo4:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    doc "¿Y usted quería venir?"
+    doc normal "¿Y usted quería venir?"
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2440,11 +2345,9 @@ label Cap4Confiar:
     scene psicologo
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
 
-    show psicologa at right
+    show psicologa normal at right_1
     with dissolve
 
     #1 es caja de diálogo pero como pensamiento de Ester.
@@ -2515,11 +2418,10 @@ label Cap4NoConfiar:
     scene psicologo
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
 
-    show psicologa at right
+    show psicologa normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2541,7 +2443,7 @@ label Cap4NoConfiar:
     abuela "Se llama Lucas."
     doc "¿Y cómo es Lucas?"
     abuela "Cabeza dura."
-    abuela "Pero buen chico."
+    abuela @ happy "Pero buen chico."
     doc "¿Se parece a usted?"
     abuela "En cabeza dura, sí."
 
@@ -2555,7 +2457,7 @@ label Cap4NoConfiar:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    doc "Ester, gracias por venir."
+    doc @ happy "Ester, gracias por venir."
     doc "La puerta queda abierta si algún día quiere volver."
     abuela "Ya veremos."
 
@@ -2572,9 +2474,8 @@ label Cap4Conexion:
     scene sala_de_espera
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
 
     show hija at center
     with dissolve
@@ -2590,16 +2491,8 @@ label Cap4Conexion:
 
     pensamientoabuela "Miro el modo en el que aquella señora sale de la oficina."
     pensamientoabuela "Y la forma en la que ambos adultos se apresuran hacia ella."
-    
-    scene sala_de_espera
-    with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show ambar at center
-    with dissolve
+    show ambar normal at right_2
 
     #0 es caja de diálogo normal.
     $ text_box = 0
@@ -2608,7 +2501,7 @@ label Cap4Conexion:
     abuela "Fatigada."
     abuela "Hablar cansa."
     esposa "Sí."
-    esposa "Pero lo hiciste igual."
+    esposa @ happy "Pero lo hiciste igual."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2619,9 +2512,8 @@ label Cap4Conexion:
     scene realliving
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
 
     show hija at center
     with dissolve
@@ -2632,14 +2524,10 @@ label Cap4Conexion:
     hija "¿Querés tomar algo, mamá?"
     abuela "Un té está bien."
 
-    scene realliving
-    with fade
+    hide hija
+    with dissolve
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
-
-    show personaje_placeholder_blury at right
+    show lucas normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2668,17 +2556,15 @@ label Cap4Conexion:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    abuela "Fue bien."
+    abuela @ happy "Fue bien."
     abuela "La doctora es rara."
-    abuela "Pero no molesta."
+    abuela @ happy "Pero no molesta."
     hijo "Algo es algo."
 
     scene black
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2688,16 +2574,15 @@ label Cap4Conexion:
     scene psicologo
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
     
     pensamientoabuela "Los chicos me consultan cosas que sé responder."
     pensamientoabuela "No sé si lo hacen a propósito."
-    pensamientoabuela "Pero me gusta."
+    pensamientoabuela @ happy "Pero me gusta."
     pensamientoabuela "Además, el cuadro de la oficina ya lo conozco."
     pensamientoabuela "La señora de recepción se llama Mirta."
     pensamientoabuela "Hoy no tuve que preguntar dónde sentarme."
@@ -2706,12 +2591,11 @@ label Cap4Conexion:
     show hija at center
     with dissolve
 
-    show personaje_placeholder_bluryl:
-        xalign 0.75
-        yalign 1.0
+    show lucas normal at left_2:
+        xzoom -1.0
     with dissolve
 
-    show psicologa at right
+    show psicologa normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2746,13 +2630,13 @@ label Cap4Conexion:
 
     pensamientoabuela "Una pastilla para el cerebro."
     pensamientoabuela "Como si fuera un reloj al que le faltara cuerda."
-    pensamientoabuela "¿Y si no funciona?"
+    pensamientoabuela confused "¿Y si no funciona?"
     pensamientoabuela "¿Y si sí funciona y me vuelvo otra?"
 
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    abuela "¿Y si no quiero tomarla?"
+    abuela normal "¿Y si no quiero tomarla?"
     doc "Es su decisión."
     doc "Nadie la obliga, Ester."
     doc "Me gustaría saber qué es lo que le genera malestar de todo esto."
@@ -2862,23 +2746,22 @@ label CentroMemoria:
     $ text_box = 1
 
     pensamientoabuela "Cocina."
-    pensamientoabuela "Eso sí sé hacerlo."
+    pensamientoabuela @ happy "Eso sí sé hacerlo."
 
     #0 es caja de diálogo normal.
     $ text_box = 0
 
     abuela "¿Puedo ir a mirar primero?"
-    doc "Por supuesto."
+    doc happy "Por supuesto."
     doc "De hecho, se lo recomiendo."
 
     scene pieza_ester
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
 
-    show ambar at right
+    show ambar normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2907,9 +2790,8 @@ label CentroMemoria:
 
     play sound "audio/closed door sfx.mp3"
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2919,10 +2801,6 @@ label CentroMemoria:
 
     scene black
     with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2939,16 +2817,15 @@ label EpilogoBueno:
     scene realliving
     with fade
 
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    show ester normal at left_1
+    with dissolve
     
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
     pensamientoabuela "Todavía voy al centro de ayuda."
     pensamientoabuela "Y sigo viendo a la psiquiatra."
-    pensamientoabuela "Hay días mejores."
+    pensamientoabuela @ happy "Hay días mejores."
     pensamientoabuela "Y otros más difíciles."
 
     #0 es caja de diálogo normal.
@@ -2964,7 +2841,7 @@ label EpilogoBueno:
     abuela "Bien."
     abuela "Creo que dormí bastante."
 
-    show personaje_placeholder_blury at right
+    show lucas normal at right_1
     with dissolve
 
     hijo "En un rato llega Ámbar con los chicos."
@@ -2973,16 +2850,15 @@ label EpilogoBueno:
     $ text_box = 1
 
     pensamientoabuela "No siempre recuerdo quién viene."
-    pensamientoabuela "Pero me gusta cuando la casa se llena."
-
-    scene realliving
-    with fade
-
-    show nona_busto:
-        xalign 0
-        yalign 1.0
+    pensamientoabuela @ happy "Pero me gusta cuando la casa se llena."
     
-    show ambar at right
+    hide lucas
+    with dissolve
+
+    hide hija
+    with dissolve
+
+    show ambar at right_2
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -2990,12 +2866,10 @@ label EpilogoBueno:
 
     esposa "¡Llegamos!"
 
-    show hermano_menor:
-        xalign 0.25
-        yalign 1.0
+    show santino normal at right_3
     with dissolve
 
-    nietomenordelhijo "¡Hola, abuela!"
+    nietomenordelhijo @ happy "¡Hola, abuela!"
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -3006,9 +2880,9 @@ label EpilogoBueno:
     $ text_box = 0
 
     esposa "¿Cómo estás, Ester?"
-    abuela "Bien."
+    abuela @ happy "Bien."
     abuela "Y con hambre."
-    esposa "Perfecto."
+    esposa @ happy "Perfecto."
     esposa "Porque justo trajimos algo para merendar."
 
     show hija at center
@@ -3021,7 +2895,7 @@ label EpilogoBueno:
 
     pensamientoabuela "No recuerdo todo."
     pensamientoabuela "Probablemente nunca vuelva a hacerlo."
-    pensamientoabuela "Pero ya no me siento sola."
+    pensamientoabuela @ happy "Pero ya no me siento sola."
 
     scene black
     with fade
@@ -3035,36 +2909,35 @@ label EpilogoMalo:
     scene hospital
     with fade
     
-    show psicologal at left
+    show psicologa at left_1
+        xzoom -1.0
     with dissolve
 
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    doc "Ester, tiene visitas."
+    doc @ happy "Ester, tiene visitas."
     doc "Pueden pasar."
 
-    show personaje_placeholder_blury at right
+    show lucas normal at right_1
     with dissolve
 
     hijo "Mamá."
     hijo "Somos nosotros."
     
-    show hija:
-        xalign 0.75
-        yalign 1.0
+    show hija at right_2
     with dissolve
 
     hija "Quizás ya no nos reconoce."
     hijo "Vinieron los chicos también."
 
-    scene hospital
-    with fade
-
-    show psicologal at left
+    hide lucas
     with dissolve
 
-    show hermano_mayor at right
+    hide hija
+    with dissolve
+
+    show facundo normal at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -3074,18 +2947,13 @@ label EpilogoMalo:
 
     doc "Ester no habla con nadie desde hace días."
 
-    scene hospital
-    with fade
-
-    show psicologal at left
+    hide facundo
     with dissolve
     
-    show personaje_placeholder_blury:
-        xalign 0.75
-        yalign 1.0
+    show lucas normal at right_2
     with dissolve
 
-    show hija at right
+    show hija at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
@@ -3093,14 +2961,8 @@ label EpilogoMalo:
 
     hija "No sé para qué seguimos viniendo."
     hijo "Porque sigue siendo nuestra mamá."
-
-    scene hospital
-    with fade
-
-    show psicologal at left
-    with dissolve
     
-    show ambar at right
+    show ambar at right_3
     with dissolve
 
     #0 es caja de diálogo normal.
