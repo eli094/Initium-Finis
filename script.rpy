@@ -1673,6 +1673,9 @@ label EntradaAmbar:
 
     hijo "Llegaste justo."
 
+    show ambar normal at center:
+        xzoom 1.0
+
     esposa @ happy "Hola, Ester."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
@@ -1686,6 +1689,10 @@ label EntradaAmbar:
     $ text_box = 0
 
     abuela "Hola..."
+
+    show ambar normal at center:
+        xzoom -1.0
+
     esposa "Lucas."
     esposa "Luciana."
     esposa "¿Por qué no van a hablar tranquilos a otro lado?"
