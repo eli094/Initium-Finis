@@ -2170,6 +2170,9 @@ label Cap3Negar:
 
 label Capitulo4:
 
+    scene black
+    with fade
+
     scene sala_de_espera
     with fade
 
