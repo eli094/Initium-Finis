@@ -195,13 +195,13 @@ label Trust:
     $ text_box = 0
 
     hija "¿Cómo? ¿Cómo que amiga? Yo soy tu hija."
-    hija "¿Cómo no te acordás de mí?"
+    hija angry "¿Cómo no te acordás de mí?"
     hijo "Entiendo que estés agotada por el trabajo, hermana."
     hijo "Puedo comprender que toda esta situación te duela."
     hijo "Pero vos sabés que ella no lo hace a propósito."
     hijo "Te pediría que vayas a tomar algo de aire al balcón."
     hijo "Por favor."
-    hija "No, estoy bien. Ya me relajé."
+    hija normal "No, estoy bien. Ya me relajé."
     hija "Mamá."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
@@ -214,10 +214,10 @@ label Trust:
 
     hija "Los chicos vendrán una vez que salgan del colegio y de la facultad."
     abuela "¿Cuándo... tuviste hijos, Amiga? No me avisaste."
-    hija "Yo no soy tu amiga. ¿Cuántas veces más te lo tengo que decir?"
+    hija angry "Yo no soy tu amiga. ¿Cuántas veces más te lo tengo que decir?"
     hija "Soy tu hija."
     hija "Y desde hace 26 años tengo una hija."
-    hija "¿No te podés acordar?"
+    hija normal "¿No te podés acordar?"
 
     hide hija
     with dissolve
@@ -676,7 +676,7 @@ label Story12:
     hija "El paseo le va a venir bien a mamá."
     hija "A ver si no se olvida de ellos también..."
     hijo @ angry "Luciana. Basta."
-    hija "Vayan, chicos. Tienen mi permiso."
+    hija @ happy "Vayan, chicos. Tienen mi permiso."
     hija "Me voy a quedar a hablar con su viejo."
     hijo "Agh. Pero tengan cuidado, ¿sí?."
     hijo "Si llega pasar algo o ven a alguien raro, por favor, llámenme."
@@ -787,7 +787,7 @@ label Story21:
     hija "El paseo le va a venir bien a mamá."
     hija "A ver si no se olvida de ellos también..."
     hijo @ angry "Luciana. Basta."
-    hija "Vayan, chicos. Tienen mi permiso."
+    hija @ happy "Vayan, chicos. Tienen mi permiso."
     hija "Me voy a quedar a hablar con su viejo."
     hijo "Agh. Pero tengan cuidado, ¿sí?."
     hijo "Si llega pasar algo o ven a alguien raro, por favor, llámenme."
@@ -988,7 +988,7 @@ label Yes:
     abuela "Me acompañó hasta la plaza."
     abuela @ happy "Muy educado."
     hija "Es tu nieto, mamá."
-    hija "No sirvió de nada el paseo parece."
+    hija @ angry "No sirvió de nada el paseo parece."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -1006,7 +1006,7 @@ label Yes:
     abuela @ happy "Les agradezco lo que hicieron por mí."
     abuela "Pero me puedo cuidar sola."
 
-    hija "Bah. A ver si sirve esto."
+    hija @ angry "Bah. A ver si sirve esto."
 
     scene tv
     with fade
@@ -1022,7 +1022,7 @@ label Yes:
 
     hija "Mirá."
     hija "¿Te acordás?"
-    hija "Somos todos nosotros en la playa."
+    hija happy "Somos todos nosotros en la playa."
     hija "Era el día de tu cumpleaños."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
@@ -1052,7 +1052,7 @@ label Yes:
     nietomayordelhijo "No le muestres eso, tía."
     nietomayordelhijo "La vas a confundir más."
 
-    hija "No te metas, Facundo."
+    hija @ angry "No te metas, Facundo."
 
     show yamila normal at right_2
     with dissolve
@@ -1137,7 +1137,7 @@ label DoNotIntervene:
     hijo "Ya nos dijo el médico que no debemos forzarla."
     hijo "La puede estresar más."
 
-    hija "Yo solo quiero que nos recuerde."
+    hija @ sad "Yo solo quiero que nos recuerde."
 
     hide hija 
     with dissolve
@@ -1195,7 +1195,7 @@ label DoNotIntervene:
     hija "Hace muchísimo que no te llamaba así."
     hijo "¿Viste?"
     hijo "Todavía recuerda algunas cosas."
-    hija "Tal vez tengas razón."
+    hija @ happy "Tal vez tengas razón."
     hijo "No sirve de nada discutir."
     hijo "Vení, vamos adentro."
 
@@ -1368,7 +1368,7 @@ label CachitoYes:
     $ text_box = 0
 
     hija "Ay mamá."
-    hija "Gracias a Dios estás bien."
+    hija @ happy "Gracias a Dios estás bien."
 
     jump Capitulo3_Perdida
 
@@ -1509,7 +1509,7 @@ label Capitulo3_Casa:
 
     abuela @ confused "¿Desesperación por qué, querida?"
     hija "Porque..."
-    hija "Porque siento que te perdemos un poquito más cada día."
+    hija sad "Porque siento que te perdemos un poquito más cada día."
 
     play sound "audio/luciana crying sfx.mp3"
 
@@ -1525,7 +1525,7 @@ label Capitulo3_Casa:
 
     abuela @ happy "No llores, hija."
     abuela "No me gusta cuando lloran en esta casa."
-    hija "Perdón, mamá."
+    hija normal "Perdón, mamá."
     hijo "Bueno, ya está."
     hijo "Lo importante es que hoy salió todo bien."
 
@@ -1549,7 +1549,7 @@ label Capitulo3_Perdida:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    hija "Mamá, no podés volver a hacer algo así."
+    hija @ angry "Mamá, no podés volver a hacer algo así."
     abuela "¿Algo como qué?"
     abuela "Solo estaba caminando."
 
@@ -1558,7 +1558,7 @@ label Capitulo3_Perdida:
 
     hijo "Mamá."
     hijo "Te perdimos por dos horas."
-    hija "¡Dos horas!"
+    hija angry "¡Dos horas!"
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -1942,7 +1942,7 @@ label CenaFamiliar:
     hijo "Una psicóloga."
     hijo "O una psiquiatra."
     hijo "Alguien que pueda ayudarte a entender mejor lo que te está pasando."
-    hija "Y que nos ayude a nosotros a acompañarte."
+    hija @ happy "Y que nos ayude a nosotros a acompañarte."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2011,7 +2011,7 @@ label Cap3Aceptar:
     abuela @ angry "Pero no me hablen como si ya no entendiera nada."
 
     hijo "Nunca haríamos eso."
-    hija "Gracias, mamá."
+    hija @ happy "Gracias, mamá."
 
     #0 es caja de diálogo normal.
     $ text_box = 0
@@ -2083,7 +2083,7 @@ label Cap3Negar:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    hija "Mamá, sentate."
+    hija @ angry "Mamá, sentate."
     abuela angry "¡No me toques!"
 
     hide hija
@@ -2700,7 +2700,7 @@ label MedicacionSi:
 
     abuela "Está bien."
     abuela "La voy a tomar."
-    hija "Gracias, mamá."
+    hija happy "Gracias, mamá."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
@@ -2955,7 +2955,7 @@ label EpilogoMalo:
     hijo "Mamá."
     hijo "Somos nosotros."
     
-    show hija normal at right_2
+    show hija sad at right_2
     with dissolve
 
     hija "Quizás ya no nos reconoce."
@@ -2983,7 +2983,7 @@ label EpilogoMalo:
     show lucas normal at right_2
     with dissolve
 
-    show hija normal at right_1
+    show hija sad at right_1
     with dissolve
 
     #0 es caja de diálogo normal.
