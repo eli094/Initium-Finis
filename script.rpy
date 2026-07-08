@@ -31,6 +31,7 @@ default text_box = 0
 image textbox = ConditionSwitch(
     "text_box == 0", Image("gui/textbox.png", xalign = 0.5, xfill = True, yalign = gui.textbox_yalign, ysize = gui.textbox_height),
     "text_box == 1", Image("gui/thoughtbubble.png", xalign = 0.5, xfill = True, yalign = gui.textbox_yalign, ysize = gui.textbox_height),
+    "text_box == 2", Image("gui/sheetmaker.png", xalign = 0.5, xfill = True, yalign = gui.textbox_yalign, ysize = gui.textbox_height),
     )
 
 label start:
@@ -2173,6 +2174,13 @@ label Capitulo4:
     scene black
     with fade
 
+    show ester normal at left_1
+
+    #1 es caja de diálogo pero como pensamiento de Ester.
+    $ text_box = 1
+
+    pensamientoabuela "Ya es mañana."
+
     scene sala_de_espera
     with fade
 
@@ -2181,7 +2189,7 @@ label Capitulo4:
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
-    pensamientoabuela "Este lugar huele a nuevo."
+    pensamientoabuela "Y este lugar huele a nuevo."
     pensamientoabuela "¿Por qué me trajeron acá?"
     pensamientoabuela "Todos me miran como si fuera a romperme."
 
@@ -2827,10 +2835,10 @@ label CentroMemoria:
     scene black
     with fade
     
-    #1 es caja de diálogo pero como pensamiento de Ester.
-    $ text_box = 1
+    #2 es caja de diálogo de papel "moderno".
+    $ text_box = 2
 
-    pensamientoabuela "Ha pasado un año ya."
+    "Ha pasado un año ya."
 
     if confio_doctora and acepta_medicacion:
         jump EpilogoBueno
@@ -2928,6 +2936,9 @@ label EpilogoBueno:
     scene black
     with fade
 
+    #2 es caja de diálogo final.
+    $ text_box = 2
+
     "Fin."
 
     return
@@ -3012,8 +3023,8 @@ label EpilogoMalo:
     scene black
     with fade
 
-    #0 es caja de diálogo normal.
-    $ text_box = 0
+    #2 es caja de diálogo final.
+    $ text_box = 2
 
     "Con el tiempo, Ester perdió la capacidad de moverse."
     "Pasa su tiempo, acostada."
