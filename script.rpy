@@ -2139,7 +2139,7 @@ label Cap3Negar:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
-    hija "Aunque te enojes con nosotros."
+    hija sad "Aunque te enojes con nosotros."
 
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
