@@ -1,12 +1,12 @@
-﻿define abuela = Character(_("Ester"), color="#a105c8", image = "ester")
-define pensamientoabuela = Character(_("Pensamientos de Ester"), color="#a105c8", image = "ester")
+﻿define abuela = Character(_("Ester"), color="#e214e9", image = "ester")
+define pensamientoabuela = Character(_("Pensamientos de Ester"), color="#e214e9", image = "ester")
 
-define hijo = Character(_("Lucas"), color="#2b00ff", image = "lucas")
+define hijo = Character(_("Lucas"), color="#0059ff", image = "lucas")
 define hija = Character(_("Luciana"), color="#fbfbfbc6", image = "hija")
 
-define esposa = Character(_("Ámbar"), color="#fd0065ff", image = "ambar")
+define esposa = Character(_("Ámbar"), color="#fd0037ff", image = "ambar")
 define nietomayordelhijo = Character(_("Facundo"), color="#00ff0dff", image = "facundo")
-define nietadelmediodelhijo = Character(_("Yamila"), color="#ff00e6ff", image = "yamila")
+define nietadelmediodelhijo = Character(_("Yamila"), color="#ff00aaff", image = "yamila")
 define nietomenordelhijo = Character(_("Santino"), color="#00d9ffff", image = "santino")
 
 define cachito = Character(_("Cachito"), color="#000000ff", image = "cachito")
