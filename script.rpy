@@ -65,7 +65,7 @@ label start:
     $ text_box = 1
 
     menu:
-        pensamientoabuela normal "¿Cómo me siento?"
+        pensamientoabuela "¿Cómo me siento?"
 
         "No sé. Extraña.":
 
@@ -86,7 +86,7 @@ label Trust:
     #1 es caja de diálogo pero como pensamiento de Ester.
     $ text_box = 1
 
-    pensamientoabuela "Algo me dice que puedo creerle, pero prefiero quedarme callada."
+    pensamientoabuela normal "Algo me dice que puedo creerle, pero prefiero quedarme callada."
 
     #0 es caja de diálogo normal.
     $ text_box = 0
@@ -245,6 +245,8 @@ label Lie:
 
     #0 es caja de diálogo normal.
     $ text_box = 0
+
+    show ester normal
 
     hijo @ happy "Que bueno."
     hijo "¿Pudiste descansar bien?"
