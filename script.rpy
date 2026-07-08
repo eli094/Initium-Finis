@@ -1,17 +1,17 @@
-﻿define abuela = Character(_("Ester"), color="#e214e9", image = "ester")
-define pensamientoabuela = Character(_("Pensamientos de Ester"), color="#e214e9", image = "ester")
+﻿define abuela = Character(_("Ester"), color="#ee97f3", image = "ester")
+define pensamientoabuela = Character(_("Pensamientos de Ester"), color="#ee97f3", image = "ester")
 
-define hijo = Character(_("Lucas"), color="#0059ff", image = "lucas")
+define hijo = Character(_("Lucas"), color="#377af8", image = "lucas")
 define hija = Character(_("Luciana"), color="#fbfbfbc6", image = "hija")
 
-define esposa = Character(_("Ámbar"), color="#fd0037ff", image = "ambar")
+define esposa = Character(_("Ámbar"), color="#c13e6f", image = "ambar")
 define nietomayordelhijo = Character(_("Facundo"), color="#00ff0dff", image = "facundo")
-define nietadelmediodelhijo = Character(_("Yamila"), color="#ff00aaff", image = "yamila")
+define nietadelmediodelhijo = Character(_("Yamila"), color="#fc6accff", image = "yamila")
 define nietomenordelhijo = Character(_("Santino"), color="#00d9ffff", image = "santino")
 
 define cachito = Character(_("Cachito"), color="#000000ff", image = "cachito")
 
-define policia = Character(_("Policía"), color="#ef1c5bff", image = "policia")
+define policia = Character(_("Policía"), color="#fb399dc1", image = "policia")
 
 define doc = Character(_("Psiquiatra"), color="#d7ec82ff", image = "psicologa")
 
