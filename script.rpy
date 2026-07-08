@@ -2092,6 +2092,9 @@ label Cap3Negar:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
+    show ambar:
+        xzoom -1.0 
+
     esposa "Lucas."
     esposa "Traé agua."
 
@@ -2102,6 +2105,9 @@ label Cap3Negar:
 
     #0 es caja de diálogo normal.
     $ text_box = 0
+
+    show ambar:
+        xzoom 1.0 
 
     esposa "Ester."
     esposa "Mirame."
