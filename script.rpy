@@ -1654,6 +1654,9 @@ label EntradaAmbar:
     #0 es caja de diálogo normal.
     $ text_box = 0
 
+    show ambar normal at center:
+        xzoom -1.0
+
     esposa "¿Llegué en mal momento?"
 
     show hija normal at right_2
